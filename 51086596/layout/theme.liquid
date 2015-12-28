@@ -168,8 +168,15 @@
               {% comment %}
                 Loop through the social network links
               {% endcomment %}
+              {% commet %}
+                Rando comment that triggers a bunch of extra changes.  Any lines
+                with a bunch of spaces get turned into one line.
+
+                https://www.atlassian.com/git/tutorials/git-hooks/local-hooks
+                Check out pre-commit tutorial
+              {% endcomment %}
               <ul class="inline-list social-icons">
-                
+
                 {% if settings.social_twitter_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_twitter_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
@@ -178,7 +185,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_facebook_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_facebook_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
@@ -187,7 +194,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_pinterest_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_pinterest_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
@@ -196,7 +203,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_google_plus_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_google_plus_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Google Plus' }}" rel="publisher">
@@ -205,7 +212,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_instagram_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_instagram_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
@@ -214,7 +221,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_tumblr_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_tumblr_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tumblr' }}">
@@ -223,7 +230,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_youtube_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_youtube_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'YouTube' }}">
@@ -232,7 +239,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_vimeo_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_vimeo_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Vimeo' }}">
@@ -241,7 +248,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_fancy_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_fancy_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Fancy' }}">
@@ -250,7 +257,7 @@
                     </a>
                   </li>
                 {% endif %}
-                
+
                 {% if settings.social_rss_link != blank %}
                   <li>
                     <a class="icon-fallback-text" href="{{ settings.social_rss_link }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'RSS' }}">

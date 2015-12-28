@@ -1,0 +1,5 @@
+# Don't show any checkout modifications
+checkout.liquid
+
+# Don't show private keys
+config.yml
